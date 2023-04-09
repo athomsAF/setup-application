@@ -1,0 +1,166 @@
+{
+         "editor.inlineSuggest.enabled": true,
+         "workbench.colorTheme": "Monokai Pro",
+         "editor.accessibilitySupport": "on",
+         "latex-workshop.latex.tools": [
+           {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+             "-synctex=1",
+             "-interaction=nonstopmode",
+             "-file-line-error",
+             "-pdf",
+             "-outdir=%OUTDIR%",
+             "%DOC%"
+            ],
+            "env": {}
+           },
+           {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+             "-synctex=1",
+             "-interaction=nonstopmode",
+             "-file-line-error",
+             "-pdf",
+             "-outdir=%OUTDIR%",
+             "%DOC%"
+            ],
+            "env": {}
+           },
+           {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+             "-synctex=1",
+             "-interaction=nonstopmode",
+             "-file-line-error",
+             "-pdf",
+             "-outdir=%OUTDIR%",
+             "%DOC%" 
+            ],
+            "env": {}
+           },
+           {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+             "-synctex=1",
+             "-interaction=nonstopmode",
+             "-file-line-error",
+             "-pdf",
+             "-outdir=%OUTDIR%",
+             "%DOC%"
+            ],
+            "env": {}
+           }
+          ],
+          "latex-workshop.latex.recipes": [
+           {
+            "name": "pdfLaTeX",
+            "tools": [
+             "xelatex"
+            ]
+           },
+           {
+            "name": "latexmk 🔃",
+            "tools": [
+             "luatex"
+            ]
+           },
+           {
+            "name": "xelatex",
+            "tools": [
+             "xelatex"
+            ]
+           },
+           {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+            "tools": [
+             "pdflatex",
+             "bibtex",
+             "pdflatex",
+             "pdflatex"
+            ]
+           },
+           {
+           "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+           "tools": [
+             "xelatex",
+             "bibtex",
+             "xelatex",
+             "xelatex"
+            ]
+           }
+          ]
+          ,
+           "audioCues.notebookCellFailed": "off",
+           "audioCues.notebookCellCompleted": "off",
+           "audioCues.lineHasInlineSuggestion": "off",
+           "github.copilot.enable": {
+             "*": true,
+             "yaml": false,
+             "plaintext": false,
+             "markdown": true
+           },
+           "audioCues.lineHasError": "off",
+           "editor.formatOnSave": false,
+           "editor.formatOnPaste": false,
+           "editor.renderWhitespace": "trailing",
+           "editor.linkedEditing": true,
+           "editor.occurancesHighlight": true,
+           "editor.suggest.insertMode": "replace",
+     
+           "files.autoSave": "onFocusChange",
+           "files.defaultLanguage": "markdown",
+           "files.exclude":{
+             "**/.git": false,
+             "**/.svn": true,
+             "**/.hg": true,
+             "**/CVS": true,
+             "**/.DS_Store": true
+           },
+           
+           
+           //explorer config
+           "explorer.autoReveal": false,
+           "workbench.tree.indent": 10,
+           "workbench.tree.expandMode": "singleClick",
+           "emmet.triggerExpansionOnTab": true,
+           "git.confirmSync": false,
+           "git.enableSmartCommit": true,
+           "editor.fontLigatures": true,
+           "editor.fontFamily": "JetBrains Mono",
+           "editor.fontWeight": "400",
+           "editor.fontSize": 14,
+           "editor.lineHeight": 20,
+           "workbench.iconTheme": "material-icon-theme",
+           "workbench.colorCustomizations": {
+           },
+           "multiCommand.commands": [
+             {
+               "command": "multiCommand.makeRoom",
+               "sequence": [
+                 "workbench.action.toggleSidebarVisibility",
+                 "workbench.action.toggleActivityBarVisibility"
+               ]
+             }
+           ],
+           "[jsonc]": {
+             "editor.defaultFormatter": "vscode.json-language-features"
+           },
+           "editor.tabSize": 6,
+           "polyglot-notebook.kernelEnvironmentVariables": {
+
+           },
+           "liveshare.presence": true,
+           "liveshare.accessibility.soundsEnabled": false,
+           "liveshare.accessibility.voiceEnabled": false,
+           "window.zoomLevel": -1,
+           "workbench.editor.enablePreview": false,
+           "tabnine.experimentalAutoImports": true,
+           "remote.SSH.remotePlatform": {
+             "192.168.1.70": "linux"
+           }
+}
