@@ -1,0 +1,45 @@
+#tabbrowser-tabs {
+	visibility: collapse !important;
+}
+#titlebar {
+	appearance: none !important;
+	height: 0px;
+}
+   
+#titlebar > #toolbar-menubar {
+	margin-top: 0px;
+}
+   
+#TabsToolbar {
+	min-width: 0 !important;
+	min-height: 0 !important;
+}
+   
+#TabsToolbar > .titlebar-buttonbox-container {
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 0px;
+}
+#nav-bar {
+    margin-right: 120px;
+}
+
+.titlebar-button>.toolbarbutton-icon {
+	height: 20px !important;
+	min-height: 20px !important;
+	width: 20px !important;
+	min-width: 20px !important;
+}
+
+.titlebar-button {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 12px !important;
+}
+
+.titlebar-buttonbox-container {
+	
+	margin-left: 20px !important;
+	background-color: #2b2a33;
+}
